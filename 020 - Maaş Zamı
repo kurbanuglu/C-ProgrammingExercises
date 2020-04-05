@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/* aylýk 2500tlmaaþ alan kiþinin maaþýna yüzde 12 zamn yapýlýrs, yeni maaþý?*/
+
+
+int main() {
+	
+	int maas,zam;
+	
+	printf("aylik maasiniz: ");
+	scanf("%d",&maas);
+	
+	
+	zam=(maas*12/100)+maas;
+	
+	printf("zamdan sonraki maasiniz: %d",zam);
+		
+	
+	
+	return 0;
+}
