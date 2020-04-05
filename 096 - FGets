@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* fgets(file gets): verilerin topluca okunması
+   
+   3 durumda sonlanır
+   1)belirtilen sayıda karakter okuduktan sonra sonlandırır
+   2)yeni satır karakteriyle karşılaştığında sonlandırır
+   3)dosya sonuna geldiğinde sonlanır     
+   
+   fgets() in syntxı 3parametreden oluşur
+   1.parametre yazılanların atanacağı değişken  
+   2.parametre kaç karakter alacağı(max okunacak karakter sayısı)
+   3.parametre dosya yolu                */
+
+   
+int main() {
+	
+	FILE *belge;
+	char karakter[50];
+	
+	belge=fopen("C:\\Users\\murat\\Desktop\\bilgi2.txt","r");
+	
+	fgets(karakter,15,belge);
+	puts(karakter);              
+	fclose(belge);              //belgeyi kapatsın ÇALIŞMIYOOOOOO//
+	                 
+	
+	return 0;
+}
