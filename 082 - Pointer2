@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+ // bir yapının pointer olup olmadıgını nasıl anlarız? 
+ // değişkenin önünde eger (*) sembolu varsa bu onun bir gösterici oldugunu ve bellek adresi tutacagını bildirir
+ //
+
+int main() {
+	
+	int sayi=20;
+	int *s=&sayi;                  //bir pointer değişkeni oluşturduk bu değişken s, sayının bellek adresinin tutucak
+	
+	//SAYIYI EKRANA YAZDIRMA
+	printf("Deger: %d\n",sayi);
+	
+
+	
+	//ADRESİ EKRANA YAZDIRMA
+	printf("Adres: %x\n",s);        // sayi adlı değişkenin adresini yazdırıcak
+	                                // adresi tanımladığım değişken s oldugu için s yazdırdım
+	
+	
+	char harf='a';                  
+	char *h=&harf;                  //h bir pointer ve harften gelen adres h ye atanır
+	
+	
+	printf("\n\n----------\n\n");
+	
+	
+	
+	//HARFİ EKRANA YAZDIRMA
+	printf("Harf: %c",harf);        
+	printf("Adres: %x",h);           // h değişkeninden gelen adres
+	
+	
+	
+	
+	return 0;
+}
