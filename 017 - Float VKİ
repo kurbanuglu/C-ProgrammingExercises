@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+// ideal kilo hesabý: (boy-100+yaþ/10)*0.8 KADIN
+//                                     0.9 ERKEK
+
+
+
+int main() {
+	
+	float boy,yas,ideal;
+	
+	boy=172;
+	yas=20;
+	ideal=(boy-100+yas/10)*0.8;
+	printf("ideal kilonuz: %f",ideal);
+	
+	
+	return 0;
+}
