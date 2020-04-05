@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* POINTER(gösterici) = bellek ile program arasındaki bağlantıyı kurmada kullandığımız yapı 
+                        herhangi bir değişkenin kendisiyle ya da adresiyle işlem yapmasını sağlar 
+                        oluşturdugumuz int a değiskeninin bellekteki adresini verir                             */
+/*  ampersand(&)= adres operatörü                                                                               */
+ 
+
+
+int main() {
+	
+	int sayi=10;                    // tanımlamaları yazdık
+	int sayi2=10.25;
+	double sayi3=10.25;
+	char kelime='a';
+	                   
+	printf(" %d\n",sayi);           //verilerimizi yazdıralım
+	printf(" %d\n",sayi2);
+	printf(" %f\n",sayi3);
+	printf(" %c",kelime);
+	
+	printf("\n\n Bellek Adresleri \n\n");
+	
+	printf(" %x\n",&sayi);          // bellek adresleri yuzde kısmında xle alınır
+	printf(" %x\n",&sayi2);         // bellek adresini alacağım sembolün önüne ambersand koyulur
+	printf(" %x\n",&sayi3);         // çalıştığında 10 sayısının bellek adresi bulunur ( 62fe38 )
+	printf(" %x",&kelime);          // 
+	
+	
+	
+	
+	return 0;
+}
