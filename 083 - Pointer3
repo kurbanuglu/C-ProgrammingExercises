@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*   gösterici bellekte kendinden önceki ve sonraki adresleri göstersin                                                                                         */
+int main() {
+	
+	
+	char harf='k';                            
+	char *pt=&harf;            // pt: pointer
+	
+	
+	printf("Adres: %x\n",pt);  //62fe47
+	
+	pt++;                                        // pt yi 1 arttırdık                  
+	
+	printf("Adres2: %x\n",pt); //62fe48
+	
+	pt--;                                        // pt yi 1 azalttık(son değer neyse ona göre artırılıp azaltılır)
+	
+	printf("Adres3: %x\n",pt);   //62fe47
+	
+	
+	pt=pt+5;
+	printf("Adres4: %x",pt);   //62fe4c          // 10un karşılığı: a
+	                                             // 11in karşılığı:b
+	                                             // 12nin karşılığı:c old için 52 yerine c yazıldı
+	
+	return 0;
+}
