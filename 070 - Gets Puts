@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*  gets : alır           bu komutlar klavyeden girilen tüm veriyi( boşluklu dahi olsa tüm cümleyi) yazdırmaya yarar
+    puts : yerleştirir      
+
+
+	scanf klavyeden girilen verinin sadece ilk space ine kadar olan yerini yazdırır boşluk tuşundan sonrasını yazdırmaz     */
+
+int main() {
+	
+	
+	char bilgi[40];
+	
+	printf("Bilgiyi Girin: ");
+	
+	
+	
+	gets(bilgi);
+	
+	printf("\n\n");
+	
+	puts(bilgi);
+	
+	
+	
+	
+
+	
+	
+	
+	return 0;
+}
