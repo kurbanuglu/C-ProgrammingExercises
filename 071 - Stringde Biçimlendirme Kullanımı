@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	char kitap[40];
+	
+	
+	printf("Kitabin Adi: ");
+	scanf("%s",kitap);          // scan oldugu için tek kelime yazılmalı
+	
+
+	
+	printf("%s",kitap);         // mesaj olduğu gibi yazılır
+	
+	printf("\n");                  
+	
+	printf("%18s",kitap);       // sol taraftan 18karakter kullanılsın (bosluklar+kitap adı)
+	                            // kitap adı: inci olsun ..............inci > 18karakter kullanıldı
+	printf("\n");
+	
+	printf("%20.5s",kitap);      // 20karakter kullanılsın ve klavye verisinin sadece ilk 5karakterini kullansın
+		                         // kitap adı: karıncalar  ................karın > 15boşluk ve 5 karakter
+    printf("\n");
+    
+    printf("%-20s",kitap);       // 20karakter kullanılsın ama sola dayalı olarak diyo
+
+	return 0;
+}
