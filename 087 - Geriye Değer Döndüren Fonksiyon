@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* GERİYE DEGER DÖNDÜREN FONKSIYONLAR: fonk içinde bazı aritmetik işlemler yazıp bu işlemler sonucunda bir
+                                        deger elde ediyorsak bu geriye deger döndüren fonkdur  */
+
+
+    int toplam(int s1,int s2)        //toplam isimli bi fonk oluşturduk
+    {                                //parantez içine işleme sokacagımız değişkenleri yazarız
+         int s3;                     // (geriye deger döndürüleceği için void yazılmaz)
+		 s3=(s1+s2)*5-10;            // s3 sonucu tutsun ve geriye değer döndürecek deger yine s3tür (return s3)
+		 return s3;                     
+    }                                
+   
+   
+    int main() {
+	
+	int t;
+	t=toplam(4,5);                     // 4 s1 i temsil eder, 5 s2 yi temsil eder 
+	printf("%d\n",t);                  // t değişkeni de s3ü temsil eder
+	
+	t=toplam(2,3);                     // işleme sadece sayıları değştirip devam etmek istiyorsak bu fonk çok işe yarar
+	printf("%d",t);                    
+	
+	
+	
+	return 0;
+}
