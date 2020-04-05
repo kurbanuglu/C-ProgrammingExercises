@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/*neden sinav1 sinav2 sinav3 yazdýrýlamadý?*/
+int main() {
+	
+	float sinav1,sinav2,sinav3,ort;
+	
+	sinav1=75;
+	sinav2=80;
+	sinav3=81;
+	
+	printf("1.sinaviniz: %f \n",&sinav1);
+	
+    printf("2.sinaviniz: %f \n",&sinav2);
+    
+    printf("3.sinaviniz: %f \n",&sinav3);
+    
+    
+    ort=(sinav1+sinav2+sinav3)/3;
+    
+    printf("ortalamaniz: %f",ort);
+	
+	
+	
+	
+	return 0;
+}
