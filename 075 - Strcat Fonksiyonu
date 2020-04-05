@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Strcat = scanla klavyeden aldığımız verileri birleştirmek için kullanılır  */
+
+int main() {
+	
+	char kitapad[30],yazar[30],kitapyazar[60];
+	
+	printf("Kitap Adi ve Yazari Girin: ");
+	scanf("%s%s",kitapad,yazar);                // kitapad yazar vs terimlerini ctrl boşluk ile de bastırabilirsin
+	
+	strcat(kitapyazar,kitapad);                 // kitapyazarla kitapadı birleştir
+	strcat(kitapyazar," ");                     // kitapyazarla boşlugu birleştir
+	strcat(kitapyazar,"<-->");
+	strcat(kitapyazar,yazar);                   // kitapyazarla yazarı birleştir
+	
+	
+	printf("\n\n");
+	printf("%s",kitapyazar);
+	
+	
+	//düzgün çalışmıyooooooo!!!!!!!!!!!
+	
+
+	
+	return 0;
+}
