@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+// 1 ile 10 arasýndaki sayýlarý while döngüsü ile listeleyen kod//
+
+int main() {
+	
+	int i=1;
+	while(i<=10)
+	{
+		printf(" %d ",i);
+		i++;
+	}
+	
+	
+	// %d den sonraki boþluðu silince neden hata veriyor? //
+	
+	return 0;
+}
