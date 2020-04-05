@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* STRUCT = kendi arasında mantıksal ilişki bulunan ifadeler
+            genelde main in üstünde tanımlanır 
+            struct yapı demektir */
+            
+    struct kitapbilgi
+	{
+		char kitapad[20];   // buranın sırası çooookk önemlii !!!
+		char yazar[20];
+		int fiyat;
+		float puan;
+	};          
+            
+    int main() {
+    	
+    struct kitapbilgi kb={"Fahrenheit 451","Ray Bradbury",10,7.25};	 // kb isimli bir değişken ürettik ve buna sırasıyla atama yapacağız
+    
+	printf("Kitap Ad: %s\n",kb.kitapad);
+	printf("Yazar: %s\n",kb.yazar);
+	printf("Fiyat: %d\n",kb.fiyat);
+	printf("Puan: %.2f",kb.puan);    // virgülden sonra sadece 2 karakter kullansın dedik
+	                                 // %f yapsaydık virgülden sonra 5 karakter daha alıcaktı
+	
+	
+	return 0;
+}
