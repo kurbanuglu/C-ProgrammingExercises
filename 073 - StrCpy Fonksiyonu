@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* strcpy= bir char içindeki ifadeyi kopyalayıp alt tarafta yeniden kullanmak için hafızaya alan komut */
+int main() {
+	
+	char kaynak[30]="Merhaba Beyzi";  
+	char kopya[30]="";                 // kopyası            
+	
+	strcpy(kopya,kaynak);              // kopyayı kaynaga gönder
+	                                   // strcpy nin 2 parametresi vardir ( 1 , 2 ) 
+	                                   // 1.si nereye kopyalanıcak?
+	                                   // 2.si nereden kopyalanıcak?
+	                                   
+	
+	printf("%s",kopya);                 // kopyayı yazdırdık ama kopyanın içerisine kaynaktaki veriyi aldık
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
