@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* girilen en boy değerine göre dörtgen çizdirme */
+
+    void dortgen(int kisa,int uzun)      // aritmetik işlem yapıp geriye deger döndürmeyeceği için void yaptık
+    {                                    // (int kisa,uzun) yapılamaz fonk içindeki değişkenlerin parametrelerinin ayrı ayrı belirtilmek zorunda syntx hatası verir
+        int i,j;
+		for(i=0;i<uzun;i++)	
+		{
+			for(j=0;j<kisa;j++)
+			{
+				printf("*");
+			}
+			printf("\n");                // j döngüsünün her dışın çıktığında da bir boşluk bıraksın
+		}
+	}
+
+    
+	int main() {
+    	
+   
+    	dortgen(6,10);
+	
+	
+	return 0;
+}
