@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// klavyeden alýnan boy degerine göre dik üçgen oluþturma //
+
+int main() {
+	
+	int i,j,boy;
+	
+	printf("Boy Degeri Giriniz: ");
+	scanf("%d",&boy);
+	
+	for(i=1;i<=boy;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("*");
+		}
+		
+		printf("\n");
+	}
+	
+	
+	
+	return 0;
+}
