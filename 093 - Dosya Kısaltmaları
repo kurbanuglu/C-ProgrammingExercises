@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* DOSYA KISALTMALARI 
+   IO: input ve outputtan gelir
+   input: giriş
+   output: çıkış
+   file(f): dosya
+   put: yazdırma
+   open: açma
+   f open: dosya açma komutu
+   close: kapatma
+   write(w): yazma
+   read(r): okuma
+   add(a): ekleme         */
+    
+
+int main() {
+	
+	FILE *dosya;  //*: göstericidir(pointer) ismi ne? dosya
+	dosya=fopen("C:\\Kullanıcılar\\BEYZA\\yeni.text","w"); //dosyanın formatı nedir?  komutu: fopen yani açma
+	                                                                // file türündeki göstericinin 2 parametre tutması gerekir
+	                                                                // 1.parametre adresi tutar 2.parametre bunun görevini tutar(okuma yazma eklme dosyası vs)
+	
+	//komutun adres olduğunu belirlemem için çift slash eklemem gerek
+	
+	// HATA ALIYORUMMM????
+	// tek slash çift slash farkı??
+	
+	return 0;
+}
