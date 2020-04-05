@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+  int kupbul(int sayi)
+  {
+  	int sonuc=sayi*sayi*sayi;
+  	return sonuc;
+  }
+
+  int main() {
+  	
+  	int s;
+  	printf("Sayiyi Girin: ");
+  	scanf("%d",&s);
+  	printf("\n\nSonuc: %d",kupbul(s));      // kupbul fonk içine s belirlediðimiz deðiþkeni koyarýz
+  	
+	
+	
+	
+	return 0;
+}
