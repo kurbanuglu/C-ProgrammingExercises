@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define Maksimum(s1,s2) (s1>s2) ? s1: s2
+	
+/* fonk makro farkı?
+   maksimum isimli bir makro oluşturduk 
+   1.parametre s1 ve s2 değişkenlerini oluşturduk
+   2.parametre s1in s2den büyük olma şartı ve soruyorum (?) büyük mü?
+   3.parametre büyükse s1i yazsın aksi durumda s2yi yazsın                                    */
+
+int main() {
+	
+	
+	printf("%d \n",Maksimum(5,7));
+	
+	
+	
+	return 0;
+}
