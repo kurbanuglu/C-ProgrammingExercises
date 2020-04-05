@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/*3sýnav ve 1 proje notu girilen öđrencini ortalamasý*/
+
+
+
+  int main() {
+  	
+  	int sinav1,sinav2,sinav3,proje,ort;
+  	
+  	
+  	printf("1.sinaviniz:  ");
+  	scanf(" %d",&sinav1);
+  	
+  	printf("2.sinaviniz:  ");
+  	scanf(" %d",&sinav2);
+  	
+  	printf("3.sinaviniz:  ");
+  	scanf(" %d",&sinav3);
+  	
+  	printf("proje notunuz:  ");
+  	scanf(" %d",&proje);
+  	
+  	
+  	ort=(sinav1+sinav2+sinav3+proje)/4;
+  	
+  	printf("ortalamaniz: %d",ort);
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
