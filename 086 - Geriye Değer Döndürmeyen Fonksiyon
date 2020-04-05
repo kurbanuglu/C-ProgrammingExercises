@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* GERİYE DEĞER DÖNDÜRMEYEN FONK: sadece çıktı alıcaksak, yazdırma işlemi yapıcaksak bunu kullanırız
+   VOID: geriye değer döndürmeyen fonk için anahtar kelimemizdir    
+   void listele()  --> parantezi açıp kapıyorum ki bunun fonk old programa bildirdim         */
+
+
+
+void listele()                  // listele isminde bi fonk oluşturdum değerlerimi bu fonk içine atıyorum
+{
+	printf("Beyza Subasi\n");   
+	printf("Ceydanur Ilhan\n");
+	printf("Elif Celik");
+}
+
+
+int main() {
+	
+	listele();                   // listeleyi çağırdım
+	                             
+								 // Printfleri normal şekilde de yazdırabilirdik neden fonk kullandık?
+	                             //    bir projede bazı alanların pek çok yerde tekrar etmesi gerekebilir
+	                             //    sürekli sürekli printf kullanmak yerine fonk ile dire çağırılabilir
+	
+	
+	
+	return 0;
+}
