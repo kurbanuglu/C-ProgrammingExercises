@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//0 ile 50 arasýnda 5e tam bölünen sayýlarý listeleyen program//
+int main() {
+	
+	int i;
+	
+	for(i%5==0;i<50;i+=5)
+	{
+		printf("%d\n",i);
+	}
+	
+	
+	// 0dan baþlayacaðýný belirtmedim ama nasýl 0dan baþlýyor? //
+	
+	// int i;
+	// for(i=1;i<50;i++)
+	// {
+	//     if(i%5==0)
+	//     {
+	//           printf("%d\n",i);
+	//      }
+	// }
+	
+	
+	
+	
+	return 0;
+}
