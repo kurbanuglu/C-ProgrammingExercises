@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* typedef(tip tanımlama)= typdef kullanınca yapımız için yeni değişken tanımlarken structer kullanmamıza gerek kalmaz                                                                     */
+// type definication //                      
+
+
+    typedef int tamsayi;  // tamsayi artık integarın yerini tutucak
+	                      // int ts  yerine  tamsayi ts olarak kullanılıcak
+	
+	
+	int main() {
+	
+	tamsayi ts;
+	ts=22;
+	
+	tamsayi ts2,ts3;      // aynı anda 1den fazla değişken tanımlayıp yazdırabiliriz
+	ts2=23;
+	ts3=25;
+	printf("%d %d %d",ts,ts2,ts3);
+
+	
+	
+	
+	
+	return 0;
+}
