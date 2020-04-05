@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* enum = 81ilin plakasını kullanırken switch case çok uzun sürer enum bu gibi soruların daha pratik yapılamsını sağlar
+        genelde main in üstünde tanımlanır
+                                                */
+
+    enum sehirler
+    {
+    	bossehir,adana,adiyaman,afyon,agri,amasya,ankara,antalya,aydin,artvin,balikesir
+	};
+
+
+    int main() {
+    	
+    	enum sehirler il;
+    	il=aydin;
+    	printf("%d",il);            // dizilerde index değeri saymaya 0dan başladığı için başına bi 0.sehir yazarsak istediğimiz cevabı alırız
+	    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
