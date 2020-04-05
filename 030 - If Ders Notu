@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//3sýnav ve 1 proje notu girilen öðrenci: ort<50  FF
+//                                        ort 50/60 DD
+//                                        ort 60/70 CC
+//                                        ort 70/85 AA   //
+
+int main() {
+	
+    int s1,s2,s3,ort,proje;
+
+    printf("Ortalamaniz ?\n\n");
+	
+	printf("1.sinaviniz: ");
+	scanf("%d",&s1);
+	
+	printf("2.sinaviniz: ");
+	scanf("%d",&s2);
+	
+	printf("3.sinaviniz: ");
+	scanf("%d",&s3);
+	
+	printf("proje notunuz: ");
+	scanf("%d",&proje);
+	
+	ort=(s1+s2+s3+proje)/4;
+	
+	printf("ortalamaniz: %d?n",ort);
+	
+	if(ort<50)
+	{
+		printf("FF\n");
+	}
+	
+	if(50<ort<60)
+	{
+		printf("DD\n");
+	
+	if(60<ort<70)	
+	{
+		printf("CC\n");
+	}
+		
+    if(70<ort<85)
+    {
+    	printf("BB\n");
+	}
+	
+	if(85<ort<100)
+	{
+		printf("AA");
+	}
+		
+		
+		
+	}
+	
+	return 0;
+}
