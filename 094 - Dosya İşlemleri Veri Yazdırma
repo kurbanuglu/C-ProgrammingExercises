@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* geçen derste dosya oluşturduk bu derste dosyanın içini dolduracağız bi sonrakinde içi dolmuş dosyayı okuyacağız sonra bunu kuçuk bi kayıt programı haline getiricez*/
+
+int main() {
+	
+	FILE *dosya;
+	dosya=fopen("C:\\Users\\BEYZA\\Desktop\\upps2.txt","w");
+	
+	putc('a',dosya);           // 2parametre mevcuttur
+	                           // 1.parametre verinin kendisidir(tek tırnak içinde)
+	                           // 2.parametre bunun hangi dosyaya kaydolacağı(dosya değişkeninin içine kaydolur)
+	
+	putc('\n',dosya);          // a alt satır b şeklinde yazdırdı
+	putc('b',dosya);
+	
+	
+	fclose(dosya);              // okuma işlemini kapatmak için yazdık
+	
+	
+	
+	return 0;
+}
