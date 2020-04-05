@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* get: okuma, alma
+   EOF(End Of File): dosya sonu */
+
+int main() {
+	
+	FILE *belge;
+    char karakter;
+    belge=fopen("C:\\Users\\BEYZA\\Desktop\\upps2.txt","r");  // "r" dosyamın modu
+	
+	do
+	{	
+	karakter=getc(belge);        //getc içine göstericinin ismi yazılır
+	
+	printf("%c",karakter);       //okunanları yazdırıyoruz character oldugu için %c kullandık
+	}                             // yani characterden gelen verileri yazdırıcak
+	                             // verinin sadece ilk harfini yazdırdı hepsini nasıl yazdıracağız?
+	                             //EOF dosyanın son karakterine kadar götürmek için kullanacağız
+	
+	while(karakter!=EOF);          // eğer karakter dosyanın sonuna(EOF) geldiyse çıkış yap demek
+	                               //dowhile döngüsünde while dan sonra ; koyulur neden?
+	                              //çünkü eğer bu farklıysa işlemi sonlandırır devam etmez
+	                            // programda nasıl yazıldıysa metni aynen aktarır
+	fclose(belge);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
